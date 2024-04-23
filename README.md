@@ -89,6 +89,32 @@ OUTPUT:
 
 MULTIPLEXER:
 ~~~
+module mux_8to1(in,sel,out);
+  input[7:0]in;
+  output reg out;
+  always @(*)
+    begin
+      case(sel)
+        3'b000: out = in[0];
+        3'b001: out = in[1];
+        3'b010: out = in[2];
+        3'b011: out = in[3];
+        3'b100: out = in[4];
+        3'b101: out = in[5];
+        3'b110: out = in[6];
+        3'b111: out = in[7];
+        default: out = 1'bx;
+      endcase
+    end
+endmodule
+~~~
+OUTPUT:
+![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/3d047610-7418-4019-9c8b-417bd006b0b4)
+![Uploading image.png…]()
+
+
+DEMULTIPLEXER:
+~~~
 
 RESULT
 

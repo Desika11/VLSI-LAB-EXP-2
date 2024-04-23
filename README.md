@@ -56,10 +56,20 @@ VERILOG CODE
 
 ENCODER:
 ~~~
+module encoder_8_to_3(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+or g1(a0,d1,d3,d5,d7);
+or g2(a1,d2,d3,d6,d7);
+or g3(a2,d4,d5,d6,d7);
+endmodule
+~~~
 
+OUTPUT :
+ ![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/e5f0d321-36d4-4aa0-a30a-0a5291ca9944)
+![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/eda78136-88f2-48dd-bda9-214a27128142)
 
-OUTPUT WAVEFORM
- <<< PASTE YOUR OUTPUT WAVEFORM >>>
+DECODER:
+~~~
 
 RESULT
 

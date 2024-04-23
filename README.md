@@ -138,10 +138,40 @@ endmodule
 ~~~
 OUTPUT:
 ![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/1fc71a63-9e42-419d-af95-270a345ba4ff)
-![Uploading image.png…]()
+![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/2c55e09a-5110-4468-8651-95b03e456601)
 
 MAGNITUDE COMPARATOR:
 ~~~
+module comparator(a,b,eq,lt,gt);
+input [3:0] a,b;
+output reg eq,lt,gt;
+always @(a,b)
+begin
+ if (a==b)
+ begin
+  eq = 1'b1;
+  lt = 1'b0;
+  gt = 1'b0;
+ end
+ else if (a>b)
+begin
+  eq = 1'b0;
+  lt = 1'b0;
+  gt = 1'b1;
+ end
+ else
+ begin
+  eq = 1'b0;
+  lt = 1'b1;
+  gt = 1'b0;
+ end
+end 
+endmodule
+~~~
+OUTPUT:
+![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/8625193e-a157-403b-9627-92930d10bdd2)
+![Uploading image.png…]()
+
 RESULT
 
 

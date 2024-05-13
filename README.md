@@ -84,6 +84,8 @@ assign d[7]=(a[2])&(a[1])&(a[0]);
 endmodule
 ~~~
 OUTPUT:
+![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/a3814220-05a8-46d7-a2b1-669593ba69f6)
+![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/d12a917f-122c-40b2-97c1-a57ae17d0ec2)
 
 
 
@@ -172,6 +174,8 @@ OUTPUT:
 ![image](https://github.com/Desika11/VLSI-LAB-EXP-2/assets/165646570/8625193e-a157-403b-9627-92930d10bdd2)
 ![Uploading image.png…]()
 
-RESULT
+RESULT:
+Thus to simulate and synthesis ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR using Vivado was verified successfully.
+
 
 
